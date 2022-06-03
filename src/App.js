@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import Menu from "./components/navbar/navbar"
+import Home from "./pages/home/home"
+import Manga from "./pages/manga/manga"
+import Bookstore from "./pages/library/bookstore"
+import Cart from "./pages/cart/cart"
+import {Routes} from "react-router";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit dev <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Menu />
+
+            <Routes>
+                <Route exact path='/' element={<Home />}/>
+                <Route exact path='/mangas' element={<Manga />}/>
+                <Route path='/bookstores' element={<Bookstore />}/>
+                <Route path='/cart' element={<Cart />}/>
+            </Routes>
+
+        </Router>
+    );
 }
 
 export default App;
