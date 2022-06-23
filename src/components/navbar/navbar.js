@@ -14,15 +14,26 @@ const Menu = () => {
                     <Navbar.Brand href="/">Udomo</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="">
                             <LinkContainer to="/mangas">
                                 <Nav.Link>Mangas</Nav.Link>
                             </LinkContainer>
                             <LinkContainer to="/bookstores">
                                 <Nav.Link>Librairies</Nav.Link>
                             </LinkContainer>
+                        </Nav>
+                        <Nav className="">
                             <LinkContainer to="/cart">
                                 <Nav.Link><FontAwesomeIcon icon={faCartShopping} /></Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/login">
+                                <Nav.Link>Login</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/signup">
+                                <Nav.Link>Signup</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/admin">
+                                <Nav.Link>Admin</Nav.Link>
                             </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>

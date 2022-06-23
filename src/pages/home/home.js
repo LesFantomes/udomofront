@@ -1,6 +1,6 @@
 import React from 'react';
-//import logo from './ressources/logo.svg';
-//import Udomo2 from '/src/pages/ressources/Udomo2.png';
+import logo from '../../ressources/logo.svg';
+import Udomo2 from '../../ressources/Udomo2.png';
 import './home.css';
 import {Button, Card, Container, Nav, Navbar} from "react-bootstrap";
 
@@ -9,7 +9,7 @@ function Home() {
         <div>
             <div className="p-4 row">
                 <Card style={{width: '18rem'}} className="m-4">
-                    {/*<Card.Img variant="top" src={Udomo2}/>*/}
+                    <Card.Img variant="top" src={Udomo2}/>
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
@@ -20,7 +20,7 @@ function Home() {
                     </Card.Body>
                 </Card>
                 <Card style={{width: '18rem'}} className="m-4">
-                    {/*<Card.Img variant="top" src={logo}/>*/}
+                    <Card.Img variant="top" src={logo}/>
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
@@ -31,7 +31,7 @@ function Home() {
                     </Card.Body>
                 </Card>
                 <Card style={{width: '18rem'}} className="m-4">
-                    {/*<Card.Img variant="top" src={logo}/>*/}
+                    <Card.Img variant="top" src={logo}/>
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>

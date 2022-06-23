@@ -1,9 +1,7 @@
 import React from 'react';
-import onepiece from '../../ressources/onepiece.jpg';
-import Home from '../home/home';
-import './cart.css'
+import onepiece from "../../../ressources/onepiece.jpg";
 
-const Cart = () => {
+const MangaDetail = () => {
     return (
         <div className="App">
 
@@ -126,4 +124,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+export default MangaDetail;

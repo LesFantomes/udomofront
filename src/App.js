@@ -6,6 +6,10 @@ import Home from "./pages/home/home"
 import Manga from "./pages/manga/manga"
 import Bookstore from "./pages/library/bookstore"
 import Cart from "./pages/cart/cart"
+import Login from "./pages/login/login"
+import Signup from "./pages/signup/signup";
+import MangaDetail from "./pages/detail/mangaDetail/mangaDetail";
+import Admin from "./pages/admin/admin"
 import {Routes} from "react-router";
 
 function App() {
@@ -18,6 +22,10 @@ function App() {
                 <Route exact path='/mangas' element={<Manga />}/>
                 <Route path='/bookstores' element={<Bookstore />}/>
                 <Route path='/cart' element={<Cart />}/>
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/mangaDetail" element={<MangaDetail />} />
+                <Route path="/admin" element={<Admin />} />
             </Routes>
 
         </Router>
